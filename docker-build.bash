@@ -58,7 +58,7 @@ fi
 if [[ $BLD_INCLUDE_AVATARS = "true" ]]; then
   echo "=== Downloading and decompressing avatar package"
   curl -L -o defaultavatars.zip https://github.com/MCLD/greatreadingadventure/releases/download/v4.0.0/defaultavatars-4.0.0.zip
-  mkdir src/GRA.Web/assets
+  mkdir -p src/GRA.Web/assets
   unzip -q defaultavatars.zip -d src/GRA.Web/assets
   rm defaultavatars.zip
 fi
